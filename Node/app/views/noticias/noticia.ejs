@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Page Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css">
+</head>
+<body>
+        <%for (var nt in noticia) { %>
+        <h1>Noticia com id: <%= noticia[nt].id_noticia %></h1>
+        <ul>
+            <% for (var i in noticia[nt]) {%>
+                <li><%= noticia[nt][i] %></li>
+            <% }%>
+        </ul>
+        <% } %>
+</body>
+</html>

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Page Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+    <h1>Noticias em desenvolvimento</h1>
+    <table>
+        <tr>
+            <td id='idNoticia'>Id</td>
+            <td id='idTitulo'>Titulo</td>
+            <td id='idConteudo'>Noticia</td>
+        </tr>
+        <% for(var i of noticias){ 
+        %> 
+        <tr>
+            <td><%= i.id_noticia %></td>
+            <td><%= i.titulo %></td>
+            <td><%= i.noticia %></td>
+        </tr>
+        <%
+        }%>
+    </table>
+</body>
+</html>
